@@ -2,12 +2,20 @@ import math
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, Ellipse
 
+# ==========================================
+# Einstellungen
+# ==========================================
+
+NUM_SLICES = 13 # Anzahl der Tortenstücke
+NUM_LEAVES = 8  # Anzahl der Blätter an den Röschen
+RADIUS = 1.0
+
 
 def zeichne_torte(
-    num_slices=15,
-    num_leaves=8,
-    radius=1.0,
-    figsize=(8, 8),
+    num_slices,
+    num_leaves,
+    radius,
+    figsize=(10, 10),
 ):
     """Zeichnet eine runde Torte mit num_slices gleich großen Stücken."""
     rose_radius = 0.78 * radius
@@ -151,14 +159,6 @@ def zeichne_torte(
 
 
 if __name__ == "__main__":
-
-    # ==========================================
-    # Einstellungen
-    # ==========================================
-
-    NUM_SLICES = 13 # Anzahl der Tortenstücke
-    NUM_LEAVES = 8  # Anzahl der Blätter an den Röschen
-    RADIUS = 1.0
 
     # ==========================================
     # Anzeigen
